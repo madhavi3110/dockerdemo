@@ -2,7 +2,7 @@
 
 FROM ubuntu:latest
 
-MAINTAINER Dan Lachance
+MAINTAINER Madhavi
 
 RUN apt-get update
 RUN apt-get install -y python python-pip

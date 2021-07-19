@@ -4,18 +4,6 @@ FROM alpine:3.11
 
 MAINTAINER Madhavi
 
-# Install python3
-RUN apk add python3
-# Install flask
-RUN pip install flask
-# Install redis
-RUN pip install redis
-# Copy your code to docker image
-WORKDIR /app
-COPY hello.py .
-# Oper 5000 port 
-EXPOSE 5000
+# Start shell script at docker runtime
 
-# Start python app at docker runtime
-
-CMD python hello.py
+CMD sh hello.sh
